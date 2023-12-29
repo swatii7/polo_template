@@ -18,10 +18,27 @@
   <header id="header" class="header">
     <div class="container">
       <div class="brand">
+        <ul class="responsiveNav">
+          <li>
+            <a href="#" class="text-uppercase text-decoration-none pr-0">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-uppercase text-decoration-none">
+              <i class="fa-solid fa-globe"></i>
+              <sup>EN</sup>
+            </a>
+          </li>
+        </ul>
         <a href="#!" class="logo">polo</a>
+        <div>
+          <i class="fa-solid fa-bars" id="barIcon"></i>
+          <i class="fa-solid fa-xmark" id="closeIcon"></i>
+        </div>
       </div>
+      
       <nav>
-        <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
         <ul class="nav-list">
           <li>
             <a href="#" class="text-uppercase text-decoration-none">Home</a>
@@ -129,12 +146,12 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="headerIcon">
             <a href="#" class="text-uppercase text-decoration-none pr-0">
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
           </li>
-          <li>
+          <li class="headerIcon">
             <a href="#" class="text-uppercase text-decoration-none">
               <i class="fa-solid fa-globe"></i>
               <sup>EN</sup>
@@ -267,11 +284,11 @@
         </div>
 
         <!-- first row -->
-        <div class="w-100 d-flex">
-          <!-- first carousel -->
+        <div class="w-100 d-flex flex-wrap">
+          <!-- first col -->
           <div class="courselWrapper">
             <div id="window">
-              <div id="slide-container">
+              <div class="slide-container">
                 <div class="slides">
 
                   <!-- First image -->
@@ -282,19 +299,19 @@
                 <div class="slides">
                   <img class="slide" src="./images/carouselOne_secondImg.webp">
                 </div>
-                <a id="previous" class="arrow">
+                <a class="arrow previous">
                   <i class="fa-solid fa-angle-left arrowIcon"></i>
                 </a>
-                <a id="next" class="arrow">
+                <a class="arrow next">
                   <i class="fa-solid fa-angle-right arrowIcon"></i>
                 </a>
-                <div id="dotsContainer"></div>
+                <div class="dotsContainer"></div>
               </div>
 
             </div>
           </div>
 
-          <!-- second carousel -->
+          <!-- second col-->
           <div class="courselWrapper portfolio-item">
             <div class="position-relative">
               <div id="img-viewer">
@@ -323,7 +340,7 @@
             </div>
           </div>
 
-          <!-- third carousel -->
+          <!-- third col -->
           <div class="courselWrapper portfolio-item">
             <div class="position-relative">
               <div class="CarouselImgWrapper">
@@ -339,12 +356,9 @@
 
           </div>
         
-        </div>
+       
 
-
- <!-- second row -->
-        <div class="w-100 d-flex">
-  <!-- fourth carousel -->
+  <!-- fourth col -->
   <div class="courselWrapper portfolio-item">
     <div class="portfolio-item-wrap">
       <div class="CarouselImgWrapper">
@@ -364,7 +378,7 @@
     </div>
   </div>
 
-  <!-- fifth carousel -->
+  <!-- fifth col -->
   <div class="courselWrapper portfolio-item">
     <div class="position-relative">
       <div class="CarouselImgWrapper">
@@ -379,8 +393,83 @@
     </div>
 
   </div>
-        </div>
+
+<!-- sixth carousel -->
+  <div class="courselWrapper portfolio-item">
+    <div class="position-relative">
+      <div class="CarouselImgWrapper">
+        <img src="./images/carouselSixth.webp">
+      </div>
+      <div class="carouselIconWrapper">
+        <a class="iconWrapper">
+          <i class="secondImgIcon fa-solid fa-play"></i>
+        </a>
+        <a class="iconWrapper" href="#">
+          <i class="secondImgIcon fa-solid fa-link"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+          <!-- seventh carousel -->
+         
+          <div class="courselWrapper">
+            <div id="window2">
+              <div class="slideContainer2">
+                <div class="slides2">
+
+                  <!-- First image -->
+                  <img class="slide2" src="./images/carouselSeventh_firstImg.webp">
+                </div>
+
+                <!-- Second image -->
+                <div class="slides2">
+                  <img class="slide2" src="./images/carouselSeventh_secondImg.webp">
+                </div>
+                <a class="arrow previous2">
+                  <i class="fa-solid fa-angle-left arrowIcon"></i>
+                </a>
+                <a class="arrow next2">
+                  <i class="fa-solid fa-angle-right arrowIcon"></i>
+                </a>
+                <div class="dotsContainer2"></div>
+              </div>
+
+            </div>
+          </div>
+          <!-- eight carousel -->
+          <div class="courselWrapper portfolio-item">
+            <div class="position-relative">
+              <div class="CarouselImgWrapper">
+                <img src="./images/carouselEight.webp">
+              </div>
+              <div class="carouselDescription carouselIconWrapper">
+                <a href="#">
+                  <h3 class="text-uppercase font-poppins">Luxury Wine</h3>
+                  <span class="font-poppins">Graphics / Branding</span>
+                </a>
+              </div>
+            </div>
         
+          </div>
+        
+        <!-- ninth carousel -->
+        <div class="courselWrapper portfolio-item">
+          <div class="position-relative">
+            <div class="CarouselImgWrapper">
+              <img src="./images/carouselNinth.webp">
+            </div>
+            <div class="carouselDescription carouselIconWrapper">
+              <a href="#">
+                <h3 class="text-uppercase font-poppins">Last Iceland Sunshine</h3>
+                <span class="font-poppins">Graphics</span>
+              </a>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+               
       </div>
     </div>
   </section>
@@ -393,94 +482,175 @@
         <p class="font-poppins">just a few words from them...</p>
       </div>
       <div>
-       <div class="sliderWrapper">
+       <div class="sliderWrapper position-relative">
+        <div class="custImgWrapper">
+          <img src="./images/custTwo.webp">
+          <p class="font-poppins custPara">
+            Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!
+          </p>
+          <span class="custName font-poppins">
+            Alan Monre
+          </span>
+          <p class="font-poppins custDesignation">
+            CEO, Square Software
+          </p>
+        </div>
         <div class="custImgWrapper">
           <img src="./images/custOne.webp">
+          <p class="font-poppins custPara">
+            Polo is by far the most amazing template out there! I literally could not be happier that I chose to buy this template!
+          </p>
+          <span class="custName font-poppins">
+            Alan Monre
+          </span>
+          <p class="font-poppins custDesignation">
+            CEO, Square Software
+          </p>
         </div>
         
+        <div class="custImgWrapper">
+          <img src="./images/custThree.webp">
+          <p class="font-poppins custPara">
+            The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it.
+          </p>
+          <span class="custName font-poppins">
+            Alan Monre
+          </span>
+          <p class="font-poppins custDesignation">
+            CEO, Square Software
+          </p>
+        </div>
        </div>
+       <div style="text-align:center">
+        <span class="slideDot"></span> 
+        <span class="slideDot"></span> 
+        <span class="slideDot"></span> 
+      </div>
       </div>
     </div>
   </section>
 
 
   <script>
+      // function to make navbar sticky
+  window.onscroll = function () {
+    scrollNavbar()
+  }
 
-    // function to make navbar sticky
-    window.onscroll = function () {
-      scrollNavbar()
+  function scrollNavbar() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById('header').classList.add('sticky')
+    } else {
+      document.getElementById('header').classList.remove('sticky')
     }
-
-    function scrollNavbar() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById('header').classList.add('sticky')
-      } else {
-        document.getElementById('header').classList.remove('sticky')
-      }
-    }
+  }
 
 
-    // carousel function
-    var index = 0;
+  // function to make navbar responsive
+var header= document.getElementById('header');
+var navList= document.querySelector('.nav-list');
+var barIcon= document.getElementById('barIcon');
+var closeIcon= document.getElementById('closeIcon');
 
-    var slides = document.getElementsByClassName("slides");
-    var nextArrow = document.getElementById("next");
-    var previousArrow = document.getElementById("previous");
-    var dotsContainer = document.getElementById("dotsContainer");
+barIcon.addEventListener('click', function(){
+  header.style.backgroundColor= '#fff';
+  navList.style.display= 'block';
+  barIcon.style.display= 'none';
+  closeIcon.style.display= 'block'
+})
 
-    var dotArray = document.getElementsByClassName("dots");
+closeIcon.addEventListener('click', function(){
+  header.style.backgroundColor= 'transparent';
+  navList.style.display= 'none';
+  barIcon.style.display='block';
+  closeIcon.style.display= 'none';
+})
 
-    createDots();
-    showSlides(index);
+  // carousel function
+ // First carousel function
+var index1 = 0;
+var slides1 = document.getElementsByClassName('slides');
+var nextArrow1 = document.getElementsByClassName('next')[0];
+var prevArrow1 = document.getElementsByClassName('previous')[0];
+var dotsContainer1 = document.getElementsByClassName('dotsContainer')[0];
+var dotArray1 = document.getElementsByClassName("dots");
 
-    function createDots() {
-      for (i = 0; i < slides.length; i++) {
-        var dot = document.createElement("span");
-        dot.className = "dots";
-        dotsContainer.appendChild(dot);
-      }
-    }
+createDots(dotArray1, dotsContainer1, slides1);
+showSlides(index1, slides1, dotArray1);
 
-    function showSlides(x) {
-      if (x > slides.length - 1) {
-        index = 0;
-      }
-      if (x < 0) {
-        index = slides.length - 1;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        dotArray[i].className = "dots";
-      }
+nextArrow1.onclick = function () {
+  index1 += 1;
+  showSlides(index1, slides1, dotArray1);
+};
 
-      slides[index].style.display = "block";
-      dotArray[index].className += " activeDot";
-    }
+prevArrow1.onclick = function () {
+  index1 -= 1;
+  showSlides(index1, slides1, dotArray1);
+};
 
-    nextArrow.onclick = function () {
-      index += 1;
-      showSlides(index);
-    }
+// Second carousel function
+var index2 = 0;
+var slides2 = document.getElementsByClassName('slides2');
+var nextArrow2 = document.getElementsByClassName('next2')[0];
+var prevArrow2 = document.getElementsByClassName('previous2')[0];
+var dotsContainer2 = document.getElementsByClassName('dotsContainer2')[0];
+var dotArray2 = document.getElementsByClassName("dots");
 
-    previousArrow.onclick = function () {
-      index -= 1;
-      showSlides(index);
-    }
+createDots(dotArray2, dotsContainer2, slides2);
+showSlides(index2, slides2, dotArray2);
 
-    dotArray[0].onclick = showSlides(1);
+nextArrow2.onclick = function () {
+  index2 += 1;
+  showSlides(index2, slides2, dotArray2);
+};
 
-    // Function to display full view of the image
+prevArrow2.onclick = function () {
+  index2 -= 1;
+  showSlides(index2, slides2, dotArray2);
+};
 
-    function full_view(element) {
-      let imgElement = element.closest('.courselWrapper').querySelector("#img1");
-      let src = imgElement.getAttribute("src");
-      document.querySelector("#img-viewer").querySelector("img").setAttribute("src", src);
-      document.querySelector("#img-viewer").style.display = "block";
-    }
+function createDots(dotArray, dotsContainer, slides) {
+  for (var i = 0; i < slides.length; i++) {
+      var dot = document.createElement("span");
+      dot.className = "dots";
+      dotsContainer.appendChild(dot);
+      dot.addEventListener("click", function () {
+          var dotIndex = Array.from(dotArray).indexOf(this);
+          showSlides(dotIndex, slides, dotArray);
+      });
+  }
+}
 
-    function closeModel() {
-      document.querySelector("#img-viewer").style.display = "none";
-    }
+function showSlides(index, slides, dotArray) {
+  if (index > slides.length - 1) {
+      index = 0;
+  }
+  if (index < 0) {
+      index = slides.length - 1;
+  }
+  for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      dotArray[i].classList.remove("activeDot");
+  }
+
+  slides[index].style.display = "block";
+  dotArray[index].classList.add("activeDot");
+}
+
+
+  // Function to display full view of the image
+
+  function full_view(element) {
+    let imgElement = element.closest('.courselWrapper').querySelector("#img1");
+    let src = imgElement.getAttribute("src");
+    document.querySelector("#img-viewer").querySelector("img").setAttribute("src", src);
+    document.querySelector("#img-viewer").style.display = "block";
+  }
+
+  function closeModel() {
+    document.querySelector("#img-viewer").style.display = "none";
+  }
+
 
   </script>
 </body>
