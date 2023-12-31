@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/5d18c2c7a8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./app.css">
   <title>Document</title>
@@ -253,15 +255,15 @@
     <div class="container">
       <div class="row">
         <div class="col-12 portfolioHeading text-center">
-          <h2 class="font-poppins">Portfolio</h2>
-          <p class="font-poppins">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
+          <h2 class="font-poppins commonHeadingStyle">Portfolio</h2>
+          <p class="font-poppins commonParaStyle">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
             sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed
             lorem quis bibendum auctor.
           </p>
         </div>
 
         <div class="tabWrapper">
-          <ul class="list-none d-flex">
+          <ul class="list-none d-flex flex-wrap">
             <li>
               <a>Show All</a>
             </li>
@@ -478,11 +480,11 @@
   <section class="clientsWrapper">
     <div class="container">
       <div class="clientHeading">
-        <h2 class="font-poppins">Our awesome clients.</h2>
-        <p class="font-poppins">just a few words from them...</p>
+        <h2 class="font-poppins commonHeadingStyle">Our awesome clients.</h2>
+        <p class="font-poppins commonParaStyle">just a few words from them...</p>
       </div>
       <div>
-       <div class="sliderWrapper position-relative">
+       <div class="sliderWrapper slider position-relative">
         <div class="custImgWrapper">
           <img src="./images/custTwo.webp">
           <p class="font-poppins custPara">
@@ -530,7 +532,74 @@
     </div>
   </section>
 
+  <!-- blog section -->
+  <section class="blogWrapper">
+    <div class="container">
+      <div class="blogHeadingWrapper">
+        <h2 class="font-poppins commonHeadingStyle">Blog</h2>
+        <p class="commonParaStyle font-poppins">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor.
+        </p>
+      </div>
+      <div class="row">
+        <div class="blogWrapper">
 
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- company Name section -->
+  <section class="coNameWrapper">
+    <div class="container">
+      <div class="carouselCoName">
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName1Img.webp">
+          </a>
+        </div>
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName2Img.webp">
+          </a>
+        </div>
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName3Img.webp">
+          </a>
+        </div>
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName4Img.webp">
+          </a>
+        </div>
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName5Img.webp">
+          </a>
+        </div>
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName6Img.webp">
+          </a>
+        </div>
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName7Img.webp">
+          </a>
+        </div>
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName8Img.webp">
+          </a>
+        </div>
+        <div class="slideCoName">
+          <a>
+            <img src="./images/coName9Img.webp">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
   <script>
       // function to make navbar sticky
   window.onscroll = function () {
@@ -557,6 +626,7 @@ barIcon.addEventListener('click', function(){
   navList.style.display= 'block';
   barIcon.style.display= 'none';
   closeIcon.style.display= 'block'
+  header.classList.add('navOpen')
 })
 
 closeIcon.addEventListener('click', function(){
@@ -564,6 +634,7 @@ closeIcon.addEventListener('click', function(){
   navList.style.display= 'none';
   barIcon.style.display='block';
   closeIcon.style.display= 'none';
+  header.classList.remove('navOpen')
 })
 
   // carousel function
@@ -652,6 +723,31 @@ function showSlides(index, slides, dotArray) {
   }
 
 
+  </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+    // client review function
+    $('.slider').slick({
+      slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  dots: true,
+  infinite: true,
+    });
+
+    // co name slider function
+    $('.carouselCoName').slick({
+      slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  dots: true,
+  infinite: true,
+    });
   </script>
 </body>
 

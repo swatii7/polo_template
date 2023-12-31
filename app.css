@@ -199,15 +199,31 @@ nav ul li ul li a {
     display: block;
   }
 
-/* nav ul li ul li:hover .navbar-dropdown{
-    display: block !important;
-} */
+  #barIcon, #closeIcon{
+    display: none;
+  }
 
 .container{
     max-width: 1140px;
     margin: 0px auto;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.commonHeadingStyle{
+    color: #1f1f1f;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 22px;
+}
+
+.commonParaStyle{
+    font-size: 16px;
+    color: #777;
+    font-weight: 300;
+    line-height: 1.7;
 }
 
 .heroSectionWrapper{
@@ -328,21 +344,6 @@ nav ul li ul li a {
         width: 83%;
     }
 
-    .portfolioHeading h2{
-        font-weight: 500;
-        font-size: 38px;
-        line-height: 22px;
-        color: #1f1f1f;
-        letter-spacing: 0.5px;
-        margin-bottom: 16px;
-    }
-
-    .portfolioHeading p{
-        font-size: 14px;
-        font-weight: 400;
-        color: #777;
-        line-height: 1.7;
-    }
 
     .tabWrapper{
         margin-bottom: 26px;
@@ -350,7 +351,7 @@ nav ul li ul li a {
 
     .tabWrapper ul{
         margin-bottom: 16px;
-        margin: 0PX !important;
+        margin: 0px !important;
     }
 
     .tabWrapper ul li{
@@ -663,27 +664,7 @@ nav ul li ul li a {
     text-align: center;
     margin-bottom: 60px;
    }
-
-   .clientHeading h2{
-    color: #1f1f1f;
-    font-size: 38px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    margin-bottom: 16px;
-   }
-
-   .clientHeading p{
-    font-size: 16px;
-    color: #777;
-    font-weight: 300;
-    line-height: 1.7;
-   }
-
-
-
-
-
+ 
    .sliderWrapper{
     height: 270px;
     touch-action: pan-y;
@@ -696,7 +677,7 @@ nav ul li ul li a {
     margin-bottom: 20px;
     width: 100%;
     overflow: hidden;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
   }
 
@@ -737,6 +718,50 @@ nav ul li ul li a {
     font-style: italic;
   }
 
+  .slick-dots{
+    bottom: -23px;
+  }
+
+  .slick-dots li button:before{
+    font-size: 14px !important;
+  }
+
+  .coNameWrapper{
+    padding: 80px 0px;
+  }
+
+
+  /* blog section style */
+  .blogWrapper{
+    background-color: #F7F9FB;
+    padding: 80px 0px;
+    margin-bottom: 26px;
+    padding-right: 25px;
+  }
+
+  .blogHeadingWrapper{
+    margin: 0px 127px 80px;
+    text-align: center;
+  }
+
+  .blogWrapper{
+    width: 33.33%;
+    position: absolute;
+    padding: 0px 20px 20px 0px;
+    left: 0px;
+    top: 0px;
+  }
+
+  /* co name slider section style */
+  .slideCoName{
+    width: 188px !important;
+    padding: 20px;
+  }
+
+  .slideCoName img{
+    max-width: 138px;
+    width: 100%;
+  }
 
 /* media query for extra large screen device  */
 @media(min-width:1200px){
@@ -773,7 +798,7 @@ nav ul li ul li a {
         margin: 0px auto;
     }
 
-    #header{
+    .navOpen{
         height: 100%;
         max-height: 700px;
     }
@@ -819,6 +844,10 @@ nav ul li ul li a {
     .nav-list{
         display: none;
     }
+
+    #barIcon, #closeIcon{
+        display: block;
+      }
 
     #closeIcon{
         display: none;
@@ -867,7 +896,7 @@ nav ul li ul li a {
         margin: 0 auto;
     }
 
-    #header{
+    .navOpen{
         height: 100%;
         max-height: 700px;
     }
@@ -879,6 +908,11 @@ nav ul li ul li a {
         float: none;
         padding: 0 30px 0px 15px;
     }
+
+    #barIcon, #closeIcon{
+        display: block;
+      }
+
 
     .fa-bars, 
     .fa-xmark{
@@ -925,6 +959,8 @@ nav ul li ul li a {
 
 .colWrapper{
     width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .portfolioHeading{
